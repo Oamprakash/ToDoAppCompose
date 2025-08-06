@@ -90,9 +90,7 @@ Run with:
 
 ./gradlew test
 ./gradlew connectedAndroidTest
-🔗 Demo / Play Store
-📲 Download on Google Play
-(Add link if published)
+
 
 📌 Roadmap
  Add search/filter feature
