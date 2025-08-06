@@ -61,7 +61,7 @@ dependencies {
 
     // Jetpack Compose
     implementation(libs.androidx.activity.compose.v192)
-    implementation("androidx.compose.ui:ui:1.8.3")
+    implementation(libs.ui)
     implementation("androidx.compose.material3:material3:1.3.2")
     implementation("androidx.compose.ui:ui-tooling-preview:1.7.0")
     debugImplementation("androidx.compose.ui:ui-tooling:1.8.3")
@@ -76,21 +76,23 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
 
     // Room
-    implementation("androidx.room:room-runtime:2.7.2")
+    implementation(libs.androidx.room.runtime)
     kapt("androidx.room:room-compiler:2.7.2")
-    implementation("androidx.room:room-ktx:2.7.2") // for coroutines/Flow support
+    implementation(libs.androidx.room.ktx) // for coroutines/Flow support
 
     // Hilt (Dependency Injection)
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.lifecycle.viewmodel.compose)
 
     // Navigation for Compose
     implementation("androidx.navigation:navigation-compose:2.9.3")
 
     // Testing (optional but recommended)
     testImplementation(libs.junit)
-    androidTestImplementation("androidx.test.ext:junit:1.3.0")
+    androidTestImplementation(libs.androidx.junit.v130)
     androidTestImplementation(libs.androidx.espresso.core.v370)
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.8.3")
+    androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.test.manifest)
 }
