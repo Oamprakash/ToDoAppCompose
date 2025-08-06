@@ -50,6 +50,8 @@ domain (business logic - use cases)
 |
 data (repositories, API, Room DB)
 
+<img width="1280" height="1045" alt="image" src="https://github.com/user-attachments/assets/953f8dd7-a10e-4033-a64e-1770d9aeb586" />
+
 
 
 ---
